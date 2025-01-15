@@ -63,3 +63,35 @@ Produces
 ```py
 0
 ```
+
+## Notes for the Interviewer
+
+### Clarifying Questions
+
+#### Q: Can zeros preceding another digit be interpreted as a single digit, for example 01 as 1?
+
+A: No.
+
+#### Q: What should I do if invalid input is passed in?
+
+A: Assume all input is valid.
+
+#### Q: What should I do if the code can't be decoded?
+
+A: Return 0.
+
+### Hints
+
+- If your candidate struggles with an initial algorithm, encourage them to walk through an example and describe how they would do it using only pen and paper
+
+- Another hint is that this problem can be solved using dynamic programming. Encourage them to look for the overlapping subproblem. To solve this problem, you must consider the solution to each of the substrings, i.e., for `"123"`, consider `"1"`, `"2"`, `"3"`, `"12"`, and `"23"`. Notice that the substrings overlap.
+
+- If your candidate struggles with the edge case where the first two digits make up a number greater than 26, give a hint that their memo can hold an extra space
+
+## Optional Bonus At-Home Challenges
+
+To be attempted after completing the interview.
+
+- What is the time/space complexity of sample solution?
+
+- If you solved this problem recursively, try a dynamic programming approach. If you solved this problem using dynamic programming, try a recursive approach.
